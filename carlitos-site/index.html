@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Carlitos — Box & Gym</title>
+    <meta name="description" content="Carlitos: boxeador y entrenador de gimnasio. Perfil oficial, fotos, videos y contacto." />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#">Carlitos</a>
+        <nav class="nav" id="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#galeria">Galería</a>
+          <a href="#videos">Videos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Carlitos</h1>
+            <p class="sub">Boxeador | Entrenador de Gym | Creator en TikTok</p>
+            <p>Preparándome para la pelea de TikTokters. Sigue mi entrenamiento, mira mis mejores golpes y reserva una sesión.</p>
+            <a class="btn" href="#contacto">Contrata una sesión</a>
+          </div>
+          <div class="hero-media">
+            <img src="assets/img/hero.jpg" alt="Carlitos entrenando" id="heroImg">
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="container about">
+        <h2>Sobre Carlitos</h2>
+        <p>Carlitos es un entrenador y boxeador con años de experiencia en gimnasio y ring. Sus entrenamientos combinan fuerza, resistencia y técnica de boxeo. En su canal comparte rutinas, consejos y momentos de preparación para peleas.</p>
+        <ul class="stats">
+          <li><strong>Edad</strong><span>25</span></li>
+          <li><strong>Peso</strong><span>75 kg</span></li>
+          <li><strong>Rango</strong><span>Intermedio</span></li>
+        </ul>
+      </section>
+
+      <section id="galeria" class="container gallery">
+        <h2>Galería</h2>
+        <p>Haz clic en una foto para verla en grande.</p>
+        <div class="grid" id="galleryGrid">
+          <!-- Coloca tus imágenes en assets/img/ con nombres image1.jpg, image2.jpg, ... -->
+          <a href="assets/img/image1.jpg" class="media-item"><img src="assets/img/thumb_image1.jpg" alt="Carlitos 1"></a>
+          <a href="assets/img/image2.jpg" class="media-item"><img src="assets/img/thumb_image2.jpg" alt="Carlitos 2"></a>
+          <a href="assets/img/image3.jpg" class="media-item"><img src="assets/img/thumb_image3.jpg" alt="Carlitos 3"></a>
+        </div>
+      </section>
+
+      <section id="videos" class="container videos">
+        <h2>Videos</h2>
+        <p>Videos de entrenamientos y combos.</p>
+        <div class="video-grid">
+          <!-- Coloca tus videos en assets/videos/ con nombres video1.mp4, video2.mp4, ... -->
+          <video controls src="assets/videos/video1.mp4" poster="assets/img/thumb_video1.jpg"></video>
+          <video controls src="assets/videos/video2.mp4" poster="assets/img/thumb_video2.jpg"></video>
+        </div>
+      </section>
+
+      <section id="contacto" class="container contact">
+        <h2>Contacto</h2>
+        <p>Para colaboraciones, entrenamientos o prensa.</p>
+        <form id="contactForm">
+          <label>Nombre <input type="text" name="name" required></label>
+          <label>Email <input type="email" name="email" required></label>
+          <label>Mensaje <textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <div class="socials">
+          <a href="#">TikTok</a>
+          <a href="#">Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© Carlitos — Box & Gym</small>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lbClose" class="lb-close">✕</button>
+      <img id="lbImg" src="" alt="">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
